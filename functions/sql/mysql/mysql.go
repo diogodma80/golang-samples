@@ -31,9 +31,9 @@ import (
 var (
 	db *sql.DB
 
-	connectionName = os.Getenv("MYSQL_INSTANCE_CONNECTION_NAME")
-	dbUser         = os.Getenv("MYSQL_USER")
-	dbPassword     = os.Getenv("MYSQL_PASSWORD")
+	connectionName = os.Getenv("dalmeida-dev:us-central1:case19420972")
+	dbUser         = os.Getenv("user")
+	dbPassword     = os.Getenv("1234")
 	dsn            = fmt.Sprintf("%s:%s@unix(/cloudsql/%s)/", dbUser, dbPassword, connectionName)
 )
 
